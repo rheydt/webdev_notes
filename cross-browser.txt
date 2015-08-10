@@ -1,0 +1,8 @@
+/* Cross-Browser Compatibility */
+
+
+
+Timing out slow font downloads:
+- IE immediately renders text with the fallback font and re-renders it once the font download is complete.
+- Firefox holds font rendering for up to 3 seconds, after which it uses a fallback font, and once the font download has finished it re-renders the text once more with the downloaded font.
+- Chrome and Safari hold font rendering until the font download is complete.

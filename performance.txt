@@ -1,0 +1,43 @@
+/* Performance */
+
+
+https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization
+https://developers.google.com/web/fundamentals/media/images/images-in-markup
+https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/size-content-to-the-viewport
+
+
+Images
+- eliminate necessary img resources on mobile
+- minify images w/ imagemin
+- use CSS3 effects when possible
+- use vector graphics (SVG) when possible (logos, geometric shapes)
+	- SVG is an XML-based img format
+	- compress SVG files w/ GZIP
+- load different resolution raster images for different viewports
+	- file types: PNG, JPEG, GIF
+	- new types: JPEG-XR, WebP
+
+
+
+
+https://www.igvita.com/2014/01/31/optimizing-web-font-rendering-performance/
+
+
+Fonts
+- 4 factors that affect performance:
+	-  # of fonts and font-weights/styles on a page
+	- total byte size of fonts used on a page
+	- transfer latency of the font resource
+	- time when the font downloads are initiated
+- use web fonts, and limit # of fonts
+- never encode text in an image
+- to reduce transfer latency:
+	- font subsetting
+	- UA-specific optimization
+	- more efficient compression
+	- ideally, font resources are cached
+- Resource Timing API: allows us to get the DNS, TCP, and transfer time data for each font
+- Google Fonts is very useful
+- time out slow downloads (how this works depends on the browser)
+- optimize when the fetch is initiated for the font
+	-

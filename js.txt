@@ -1,0 +1,114 @@
+/* Javascript */
+
+
+
+/** DATA TYPES **/
+
+		- string: ('example' or "example", "this is an 'example'" is okay)
+		- number (can be written as integer, decimal or scientific notation)
+		- boolean (true or false)
+		- array (written with [], items separated with commas)
+		- object (written with {}, properties are written as name:value, separated by commas)
+
+		var length = 16;                               // Number
+		var lastName = "Johnson";                      // String
+		var cars = ["Saab", "Volvo", "BMW"];           // Array
+		var x = {firstName:"John", lastName:"Doe"};    // Object
+
+	Mixing data types in operations
+		- a number plus a string: js treats the number like a string
+
+	Dynamic types: the same variable can switch between different types
+
+		var x;               // Now x is undefined
+		var x = 5;           // Now x is a Number
+		var x = "John";      // Now x is a String
+
+
+
+/** VARIABLES **/
+
+	Variable names can begin with a lowercase letter or an underscore.
+	They're created, & live, either inside or outside a function
+
+		var a = 4;
+		a = 4; (
+		myString = "Welcome";
+
+	A variable without a value has a value and a type of undefined.
+
+	An empty value, e.g. var car = "";, is not undefined.
+
+	A variable can be emptied by setting its value to undefined.
+	You can empty an object by setting it to null.
+
+	Null is something that doesn't exist. It's data type is an object.
+		Note: You can consider it a bug in JavaScript that typeof null is an object. It should be null.
+
+	Null vs undefined:
+		var person = null; 	 		// Value is null, but type is still an object
+		var person = undefined;     // Value is undefined, type is undefined
+		typeof undefined             // undefined
+		typeof null                  // object
+		null === undefined           // false
+		null == undefined            // true
+
+
+
+
+
+
+
+
+/** OBJECTS **/
+
+	Collections of values.
+
+	Types of objects:
+		- string
+		- number
+		- boolean
+		- array
+		- object
+
+	Null is an object.
+
+
+
+
+/** EXPRESSIONS **/
+
+	JavaScript evaluates expressions from left to right.
+
+	Different sequences can produce different results:
+		var x = 16 + 4 + "Volvo";	// 20Volvo
+		var x = "Volvo" + 16 + 4;	// Volvo164
+
+	== compares variable values
+	=== compares variable values and types
+
+
+/** OPERATORS **/
+
+	typeof
+		typeof "John"                // Returns string
+		typeof 3.14                  // Returns number
+		typeof false                 // Returns boolean
+		typeof [1,2,3,4]             // Returns object
+		typeof {name:'John', age:34} // Returns object
+
+
+/** HTML EVENTS */
+
+	<button onclick='getElementById("demo").innerHTML=Date()'>The time is?</button>
+	<button onclick="displayDate()">The time is?</button>
+
+	Here is a list of some common HTML events:
+		onchange	An HTML element has been changed
+		onclick	The user clicks an HTML element
+		onmouseover	The user moves the mouse over an HTML element
+		onmouseout	The user moves the mouse away from an HTML element
+		onkeydown	The user pushes a keyboard key
+		onload	The browser has finished loading the page
+
+

@@ -1,0 +1,10 @@
+/* HTML */
+
+HTML vs HTML5
+
+XHTML
+
+what should go in a header
+	- meta tags
+
+doctype declarations

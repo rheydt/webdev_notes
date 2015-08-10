@@ -1,0 +1,78 @@
+/**
+ * INTERVIEW QUESTIONS
+**/
+
+
+Reverse a string using pure Javascript.
+
+
+
+
+How do you detect for the first repeated character in a string?
+
+	Loop through the characters in the string, comparing each to the one following it
+	Save the first character in the string, save the second character, compare the 2
+
+
+	for (i = 0; i < (myString.length - 1); i++) {
+
+		var x = myString.substr(i, i+);
+		var y = myString.substr(i+1, i+2);
+
+		if (x == y) {
+			return x + y;
+		}
+
+	}
+
+
+How do you detect whether or not a word is a palindrome?
+
+	Get the length of the string
+	Divide the length by 2
+	Round the product down
+	Get a substring of the first half (rounded down) of the string, save in a var
+	Get a substring of the second half (rounded down) of the string, save in a var
+	Split the string into array items, reverse the array, rejoin into a string
+	Check if the two vars are equal in value
+
+	var midpoint = ((myString.length)/2).floor;
+	var firstHalf = myString.substr(0,midpoint-1);
+	var secondHalf = myString.substr(midpoint, myString.length);
+	var reversedHalf = secondHalf.split("").reverse().join("");
+
+	if (firstHalf == reversedHalf) {
+		return true;
+	}
+	else {
+		return false;
+	}
+
+	myString = "1 2 3 4 3 2 1";
+	var midpoint = ((myString.length)/2).floor; // (7/2).floor = (3.5).floor = 3
+	var firstHalf = myString.substr(0,midpoint-1); // 1 2 3
+	var secondHalf = myString.substr(midpoint, myString.length); // 3 2 1
+
+
+
+HTML standards
+
+behavioral issues between browsers
+
+implement an accordion component from scratch
+
+javascript scoping problems
+
+How would you avoid cross-site request attacks" (saving tokens in cookies)
+
+"What is your favorite CSS3 feature"
+
+"What is your favorite HTML5 feature"
+
+"How do you manage conflict with designers"
+
+"What would you recommend we change on our website"
+
+"How would you design a website for vision impaired users".
+
+
